@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg'); /* Update this path if needed */
+            background-image: url('background.jpg'); /* Ensure this path is correct */
             background-size: cover;
             background-position: center;
             display: flex;
@@ -19,8 +19,8 @@
             border-bottom: 5px solid #fcb5b5; /* Light pink border color */
         }
         header {
-            background-color: #333;
-            color: white;
+            background-color: white; /* White background color */
+            color: #fcb5b5; /* Light pink text color */
             padding: 20px;
             text-align: center;
             flex-shrink: 0;
@@ -33,9 +33,19 @@
             justify-content: center;
             text-align: center;
         }
+        .content a {
+            color: #fcb5b5; /* Light pink text color */
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px;
+            font-size: 18px;
+        }
+        .content a:hover {
+            text-decoration: underline;
+        }
         .footer {
-            background-color: #333;
-            color: white;
+            background-color: white; /* White background color */
+            color: #fcb5b5; /* Light pink text color */
             padding: 10px;
             display: flex;
             justify-content: flex-start;
@@ -43,18 +53,13 @@
             flex-shrink: 0;
         }
         .footer a {
-            color: white;
+            color: #fcb5b5; /* Light pink text color */
             margin-right: 20px;
             text-decoration: none;
             font-weight: bold;
         }
         .footer a:hover {
             text-decoration: underline;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            margin-top: 20px;
         }
     </style>
 </head>
@@ -64,9 +69,9 @@
     </header>
 
     <div class="content">
-        <!-- Space for text and image -->
-        <p>Welcome to my website! Here is some information about me and my interests.</p>
-        <img src="path/to/your/image.jpg" alt="Your Image">
+        <!-- Centered hyperlinks -->
+        <a href="about.html">About Me</a>
+        <a href="contact.html">Contact</a>
     </div>
 
     <div class="footer">
