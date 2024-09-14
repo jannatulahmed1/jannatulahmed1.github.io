@@ -6,7 +6,7 @@
     <title>Home</title>
     <style>
         body {
-            font-family: "Comic Sans MS", sans-serif; /* Changed font to Comic Sans MS */
+            font-family: "Comic Sans MS", sans-serif; /* Comic Sans MS font */
             margin: 0;
             padding: 0;
             background-image: url('background.jpg'); /* Ensure this path is correct */
@@ -35,17 +35,24 @@
         }
         .content p {
             color: #fcb5b5; /* Light pink text color */
-            font-size: 20px;
+            font-size: 28px; /* Larger font size for the message */
             margin-bottom: 20px;
         }
-        .content a {
+        .link-box {
+            background-color: white; /* White box around the links */
+            padding: 20px;
+            border: 2px solid #fcb5b5; /* Light pink border around the box */
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .link-box a {
             color: #fcb5b5; /* Light pink text color */
             text-decoration: none;
             font-weight: bold;
             margin: 10px;
-            font-size: 18px;
+            font-size: 16px; /* Smaller font size for the links */
         }
-        .content a:hover {
+        .link-box a:hover {
             text-decoration: underline;
         }
         .footer {
@@ -70,15 +77,18 @@
 </head>
 <body>
     <header>
-        <h1>Welcome to my Website!!</h1>
+        <h1>Home</h1>
     </header>
 
     <div class="content">
         <!-- Message above hyperlinks -->
         <p>Welcome to my website! Feel free to explore more about me.</p>
-        <!-- Centered hyperlinks -->
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact</a>
+        
+        <!-- White box with links inside -->
+        <div class="link-box">
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </div>
 
     <div class="footer">
@@ -87,6 +97,7 @@
     </div>
 </body>
 </html>
+
 
 
 
