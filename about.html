@@ -9,7 +9,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg'); /* Update this path if needed */
+            background-image: url('background.jpg'); /* Ensure this path is correct */
             background-size: cover;
             background-position: center;
             display: flex;
@@ -19,8 +19,8 @@
             border-bottom: 5px solid #fcb5b5; /* Light pink border color */
         }
         header {
-            background-color: #333;
-            color: white;
+            background-color: white; /* White background color */
+            color: #fcb5b5; /* Light pink text color */
             padding: 20px;
             text-align: center;
             flex-shrink: 0;
@@ -33,9 +33,20 @@
             justify-content: center;
             text-align: center;
         }
+        .content p {
+            color: #fcb5b5; /* Light pink text color */
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .content img {
+            margin: 10px;
+            max-width: 45%; /* Adjust size as needed */
+            height: auto;
+            border: 2px solid #fcb5b5; /* Optional light pink border around images */
+        }
         .footer {
-            background-color: #333;
-            color: white;
+            background-color: white; /* White background color */
+            color: #fcb5b5; /* Light pink text color */
             padding: 10px;
             display: flex;
             justify-content: flex-start;
@@ -43,7 +54,7 @@
             flex-shrink: 0;
         }
         .footer a {
-            color: white;
+            color: #fcb5b5; /* Light pink text color */
             margin-right: 20px;
             text-decoration: none;
             font-weight: bold;
@@ -59,7 +70,12 @@
     </header>
 
     <div class="content">
-        <p>This is the About page. Here you can find information about me.</p>
+        <!-- Message -->
+        <p>Here is a little more about me and my interests!</p>
+
+        <!-- Two images -->
+        <img src="path/to/your/image1.jpg" alt="Image 1">
+        <img src="path/to/your/image2.jpg" alt="Image 2">
     </div>
 
     <div class="footer">
@@ -68,5 +84,6 @@
     </div>
 </body>
 </html>
+
 
 
