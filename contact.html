@@ -10,34 +10,53 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
         }
-        nav {
+        header {
             background-color: #333;
-            padding: 10px;
-            text-align: center;
-        }
-        nav a {
             color: white;
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
             padding: 20px;
             text-align: center;
+            flex-shrink: 0;
+        }
+        .content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+        .footer a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About Me</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-
-    <div class="container">
+    <header>
         <h1>Contact</h1>
-        <p>You can reach me at: [Your Email Address]</p>
+    </header>
+
+    <div class="content">
+        <p>This is the Contact page. You can reach me at [Your Email Address].</p>
+    </div>
+
+    <div class="footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
     </div>
 </body>
 </html>
