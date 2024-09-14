@@ -35,24 +35,29 @@
         }
         .content p {
             color: #fcb5b5; /* Light pink text color */
-            font-size: 24px; /* Larger font size for the message */
+            font-size: 24px; /* Font size for the message */
             margin-bottom: 20px;
         }
-        .link-box {
-            background-color: white; /* White box around the links */
+        .boxes-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between the boxes */
+        }
+        .box {
+            background-color: white; /* White background for the boxes */
             padding: 20px;
-            border: 2px solid #fcb5b5; /* Light pink border around the box */
+            border: 2px solid #fcb5b5; /* Light pink border around the boxes */
             border-radius: 10px;
             display: inline-block;
+            text-align: center;
         }
-        .link-box a {
+        .box a {
             color: #fcb5b5; /* Light pink text color */
             text-decoration: none;
             font-weight: bold;
-            margin: 10px;
-            font-size: 16px; /* Smaller font size for the links */
+            font-size: 16px; /* Font size for the links */
         }
-        .link-box a:hover {
+        .box a:hover {
             text-decoration: underline;
         }
         .footer {
@@ -81,13 +86,19 @@
     </header>
 
     <div class="content">
-        <!-- Message above hyperlinks -->
+        <!-- Message above the boxes -->
         <p>Hello, my name is Jannatul Ahmed. I am a senior at Hunter College, majoring in Computer Science. Learn more about me, my interests, and how to get in touch.</p>
         
-        <!-- White box with links inside -->
-        <div class="link-box">
-            <a href="about.html">About Me</a>
-            <a href="contact.html">Contact</a>
+        <!-- Container for the two white boxes -->
+        <div class="boxes-container">
+            <!-- White box for About Me -->
+            <div class="box">
+                <a href="about.html">About Me</a>
+            </div>
+            <!-- White box for Contact -->
+            <div class="box">
+                <a href="contact.html">Contact</a>
+            </div>
         </div>
     </div>
 
