@@ -30,19 +30,24 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-start; /* Adjust to move message higher */
             text-align: center;
+            padding-top: 50px; /* Add padding to move the message higher */
         }
         .content p {
             color: #fcb5b5; /* Light pink text color */
             font-size: 20px;
             margin-bottom: 20px;
         }
-        .content img {
-            margin: 10px;
-            max-width: 45%; /* Adjust size as needed */
+        .image-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+        }
+        .image-gallery img {
+            max-width: 30%; /* Adjust size to fit 3 images side by side */
             height: auto;
-            border: 2px solid #fcb5b5; /* Optional light pink border around images */
+            border: 2px solid #fcb5b5; /* Light pink border around images */
         }
         .footer {
             background-color: white; /* White background color */
@@ -70,12 +75,15 @@
     </header>
 
     <div class="content">
-        <!-- Message -->
+        <!-- Message moved higher -->
         <p>Some of my hobbies and interests include playing a variety of video games, going to concerts, listening to music, traveling, hiking, and painting.</p>
 
-        <!-- Two images -->
-        <img src="path/to/your/image1.jpg" alt="Image 1">
-        <img src="path/to/your/image2.jpg" alt="Image 2">
+        <!-- Three images side by side -->
+        <div class="image-gallery">
+            <img src="path/to/your/image1.jpg" alt="Image 1">
+            <img src="path/to/your/image2.jpg" alt="Image 2">
+            <img src="path/to/your/image3.jpg" alt="Image 3">
+        </div>
     </div>
 
     <div class="footer">
@@ -84,5 +92,6 @@
     </div>
 </body>
 </html>
+
 
 
