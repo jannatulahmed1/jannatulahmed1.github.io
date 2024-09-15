@@ -26,17 +26,17 @@
             flex-shrink: 0;
         }
         header h1 {
-            font-size: 36px; /* Increased font size for the header */
+            font-size: 36px; /* Larger font size for the header */
             margin: 0;
         }
         .content {
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
+            align-items: center; /* Center align items horizontally */
+            justify-content: flex-start; /* Align items to the top */
             text-align: center;
-            padding-top: 20px; /* Add padding to move the content higher */
+            padding-top: 30px; /* Adjust padding to move content higher */
         }
         .content p {
             color: #f38b8b; /* Darkened pink text color */
@@ -46,10 +46,11 @@
         .image-gallery {
             display: flex;
             justify-content: center;
-            gap: 40px; /* Space between images */
+            gap: 20px; /* Space between images */
+            padding-top: 20px; /* Add padding to move images up */
         }
         .image-gallery img {
-            max-width: 25%; /* Adjust size to fit 3 smaller images side by side */
+            max-width: 20%; /* Smaller size for images */
             height: auto;
             border: 2px solid #f38b8b; /* Darkened pink border around images */
         }
@@ -79,12 +80,24 @@
     </header>
 
     <div class="content">
+        <!-- Message moved higher -->
         <p>Some of my hobbies and interests include playing a variety of video games, going to concerts, listening to music, traveling, hiking, and painting.</p>
 
-        <!-- Image gallery with three images -->
+        <!-- Three images side by side with more space -->
         <div class="image-gallery">
             <img src="image1.jpg" alt="Image 1">
-            <img src="image2.jpg" alt="Image 
+            <img src="image2.jpg" alt="Image 2">
+            <img src="image3.jpg" alt="Image 3">
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</body>
+</html>
+
 
 
 
