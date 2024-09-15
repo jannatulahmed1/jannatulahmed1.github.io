@@ -19,14 +19,14 @@
             height: 100vh;
         }
         header {
-            background-color: white; /* White background color */
-            color: #f38b8b; /* Darkened pink text color */
-            padding: 40px 20px; /* Increased padding to make the header area taller */
+            background-color: white;
+            color: #f38b8b; /* Darker pink */
+            padding: 40px 20px;
             text-align: center;
             flex-shrink: 0;
         }
         header h1 {
-            font-size: 36px; /* Increased font size for the header */
+            font-size: 36px; /* Larger text for the header */
             margin: 0;
         }
         .content {
@@ -38,35 +38,35 @@
             text-align: center;
         }
         .content p {
-            color: #f38b8b; /* Darkened pink text color */
-            font-size: 20px;
+            color: #f38b8b;
+            font-size: 24px;
             margin-bottom: 20px;
         }
         .boxes-container {
             display: flex;
             justify-content: center;
-            gap: 20px; /* Space between the boxes */
+            gap: 20px; /* Space between boxes */
         }
         .box {
-            background-color: white; /* White background for the boxes */
+            background-color: white;
             padding: 20px;
-            border: 2px solid #f38b8b; /* Light pink border around the boxes */
+            border: 2px solid #f38b8b;
             border-radius: 10px;
             display: inline-block;
             text-align: center;
         }
         .box a {
-            color: #f38b8b; /* Darkened pink text color */
+            color: #f38b8b;
             text-decoration: none;
             font-weight: bold;
             font-size: 16px;
         }
         .box a:hover, .box a:active {
-            color: #f3e38b; /* Light yellow on hover and click */
+            color: #f3e38b; /* Light yellow on hover */
         }
         .footer {
-            background-color: white; /* White background color */
-            color: #f38b8b; /* Darkened pink text color */
+            background-color: white;
+            color: #f38b8b;
             padding: 10px;
             display: flex;
             justify-content: flex-start;
@@ -74,35 +74,44 @@
             flex-shrink: 0;
         }
         .footer a {
-            color: #f38b8b; /* Darkened pink text color */
+            color: #f38b8b;
             margin-right: 20px;
             text-decoration: none;
             font-weight: bold;
         }
         .footer a:hover, .footer a:active {
-            color: #f3e38b; /* Light yellow on hover and click */
+            color: #f3e38b;
+        }
+        .gif-container {
+            margin-top: 20px; /* Space between boxes and GIF */
+        }
+        .gif-container img {
+            max-width: 100%;
+            height: auto;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Website!!</h1>
+        <h1>Welcome to My Website!</h1>
     </header>
 
     <div class="content">
-        <!-- Message above the boxes -->
         <p>Hello, my name is Jannatul Ahmed. I am a senior at Hunter College, majoring in Computer Science. Here, you can find information about me, my interests, and how to contact me.</p>
         
         <!-- Container for the two white boxes -->
         <div class="boxes-container">
-            <!-- White box for About Me -->
             <div class="box">
                 <a href="about.html">About Me</a>
             </div>
-            <!-- White box for Contact -->
             <div class="box">
                 <a href="contact.html">Contact</a>
             </div>
+        </div>
+
+        <!-- GIF under the boxes -->
+        <div class="gif-container">
+            <img src="image4.gif" alt="A fun GIF"> <!-- Your image4.gif file -->
         </div>
     </div>
 
