@@ -26,12 +26,68 @@
             flex-shrink: 0;
         }
         header h1 {
-            font-size: 36px; /* Increased font size for the header */
+            font-size: 36px; /* Larger font size for the header */
             margin: 0;
         }
         .content {
             flex: 1;
-           
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .content p {
+            color: #f38b8b; /* Darkened pink text color */
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+        .message-box {
+            background-color: white; /* White background */
+            padding: 20px;
+            border: 2px solid #f38b8b; /* Darkened pink border around the box */
+            border-radius: 10px;
+            display: inline-block;
+        }
+        .footer {
+            background-color: white; /* White background color */
+            color: #f38b8b; /* Darkened pink text color */
+            padding: 10px;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .footer a {
+            color: #f38b8b; /* Darkened pink text color */
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .footer a:hover, .footer a:active {
+            color: #f3e38b; /* Light yellow on hover and click */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+    </header>
+
+    <div class="content">
+        <!-- White box around the message -->
+        <div class="message-box">
+            <p>Email: Jannatul.ahmed77@myhunter.cuny.edu</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+    </div>
+</body>
+</html>
+
 
 
 
