@@ -7,70 +7,131 @@
     <!-- Link to Google Fonts for Dosis -->
     <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
+        /* Global styles */
         body {
-            font-family: "Dosis", sans-serif; /* Dosis font */
+            font-family: "Dosis", sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('background.jpg'); /* Ensure this path is correct */
+            background-image: url('background.jpg'); /* Background image */
             background-size: cover;
             background-position: center;
             display: flex;
             flex-direction: column;
             height: 100vh;
         }
+
+        /* Header styles */
         header {
-            background-color: white; /* White background color */
-            color: #f38b8b; /* Darkened pink text color */
-            padding: 40px 20px; /* Increased padding to make the header area taller */
+            background-color: white;
+            color: #f38b8b; /* Dark pink */
+            padding: 40px 20px; /* Taller header */
             text-align: center;
             flex-shrink: 0;
         }
+
         header h1 {
-            font-size: 36px; /* Larger font size for the header */
+            font-size: 36px; /* Larger font for desktop */
             margin: 0;
         }
+
+        /* Content styles */
         .content {
             flex: 1;
             display: flex;
             flex-direction: column;
-            align-items: center; /* Center align items horizontally */
-            justify-content: flex-start; /* Align items to the top */
+            align-items: center;
+            justify-content: flex-start;
             text-align: center;
-            padding-top: 30px; /* Adjust padding to move content higher */
+            padding-top: 30px;
         }
+
         .content p {
-            color: #f38b8b; /* Darkened pink text color */
+            color: #f38b8b;
             font-size: 20px;
             margin-bottom: 20px;
         }
+
+        /* Image gallery styles */
         .image-gallery {
             display: flex;
             justify-content: center;
-            gap: 20px; /* Space between images */
-            padding-top: 20px; /* Add padding to move images up */
+            gap: 20px;
+            padding-top: 20px;
         }
+
         .image-gallery img {
-            max-width: 20%; /* Smaller size for images */
+            max-width: 20%;
             height: auto;
-            border: 2px solid #f38b8b; /* Darkened pink border around images */
+            border: 2px solid #f38b8b;
         }
+
+        /* Footer styles */
         .footer {
-            background-color: white; /* White background color */
-            color: #f38b8b; /* Darkened pink text color */
+            background-color: white;
+            color: #f38b8b;
             padding: 10px;
             display: flex;
             justify-content: flex-start;
             align-items: center;
             flex-shrink: 0;
         }
+
         .footer a {
-            color: #f38b8b; /* Darkened pink text color */
+            color: #f38b8b;
             margin-right: 20px;
             text-decoration: none;
             font-weight: bold;
         }
+
         .footer a:hover, .footer a:active {
-            color: #f3e38b; /* Light yellow on hover and click */
+            color: #f3e38b; /* Light yellow on hover */
+        }
+
+        /* Responsive Styles using Media Queries */
+        @media (max-width: 1024px) {
+            header h1 {
+                font-size: 32px; /* Slightly smaller font for tablets */
+            }
+
+            .content p {
+                font-size: 18px; /* Adjust paragraph font size for medium screens */
+            }
+
+            .image-gallery img {
+                max-width: 25%; /* Increase image size for medium screens */
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 28px; /* Smaller font for mobile screens */
+            }
+
+            .content p {
+                font-size: 16px; /* Smaller paragraph text for mobile */
+            }
+
+            .image-gallery {
+                flex-direction: column; /* Stack images vertically on small screens */
+            }
+
+            .image-gallery img {
+                max-width: 50%; /* Make images larger when stacked vertically */
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 24px; /* Small font for very small screens */
+            }
+
+            .content p {
+                font-size: 14px; /* Further reduced font size */
+            }
+
+            .image-gallery img {
+                max-width: 80%; /* Make images full-width for very small screens */
+            }
         }
     </style>
 </head>
@@ -80,10 +141,8 @@
     </header>
 
     <div class="content">
-        <!-- Message moved higher -->
         <p>Some of my hobbies and interests include playing a variety of video games, going to concerts, listening to music, traveling, hiking, and painting.</p>
 
-        <!-- Three images side by side with more space -->
         <div class="image-gallery">
             <img src="image1.jpg" alt="Image 1">
             <img src="image2.jpg" alt="Image 2">
@@ -97,7 +156,6 @@
     </div>
 </body>
 </html>
-
 
 
 
